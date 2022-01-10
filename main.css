@@ -1,0 +1,13 @@
+.site {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.delete-button {
+  transform: translateX(50px);
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+}
