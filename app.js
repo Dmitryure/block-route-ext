@@ -53,7 +53,6 @@ const siteInfo = ({ site, routes }) => {
 </div>`;
   }
   let lis = "";
-  console.log(site, routes);
   routes.map((route) => (lis += `<li>${routeInfo({ site, route })}</li>`));
   return `<div>
         <div class="site">${site}</div>
@@ -68,7 +67,6 @@ button.addEventListener("click", () => {
 });
 
 document.body.addEventListener("click", (e) => {
-  console.log(e.target.dataset);
   const data = e.target.dataset;
   switch (Object.keys(data)[0]) {
     case "siteButton": {
